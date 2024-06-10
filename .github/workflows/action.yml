@@ -5,7 +5,7 @@ on:
     - cron: '*/30 * * * *'
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, naver]
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.11
